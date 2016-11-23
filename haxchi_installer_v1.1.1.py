@@ -2,7 +2,10 @@ from __future__ import absolute_import
 from __future__ import print_function
 import os
 import sys
-import urllib
+try:
+    import urllib.request
+except ImportError:
+    import urllib
 import shutil
 import os.path
 
@@ -208,7 +211,10 @@ for retry in range(10):
         break
     elif know_ip.lower() in ['n', 'no']:
         print("Downloading WNetwatcher...(800KB)")
-        urllib.urlretrieve('http://www.nirsoft.net/utils/wnetwatcher.zip', "wnetwatcher.zip")
+        try:
+            urllib.urlretrieve('http://www.nirsoft.net/utils/wnetwatcher.zip', "wnetwatcher.zip")
+        except AttributeError:
+            urllib.request.urlretrieve('http://www.nirsoft.net/utils/wnetwatcher.zip', "wnetwatcher.zip")
         print("Please open the .exe and try to find the IP address of a Nintendo device Ex.(192.168.X.X)\n"
               "Once you found it, press enter to continue\n")
         os.startfile('wnetwatcher.zip')
