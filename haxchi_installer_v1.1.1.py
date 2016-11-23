@@ -9,6 +9,12 @@ except ImportError:
 import shutil
 import os.path
 
+#Set input to raw_input
+try:
+    input = raw_input
+except NameError:
+    pass
+
 """ WELCOME """
 print("******************************")
 print("*   Haxchi Installer 1.1.1   *")
@@ -42,7 +48,7 @@ print("******************************")
 print("*    Haxchi Installer 1.1.1  *")
 print("******************************\n")
 for retry in range(5):
-    creg = input("What is your console region ? (eur/us/jap)  ")
+    creg = input("What is your console region ? (eur/us/jap)  ").lower()
     if creg in ['eur', 'us', 'jap']:
         ansr = input("Your console region is " + creg + ". Is that correct ? (y/n)  ")
         if ansr.lower() in ['y', 'yes']:
