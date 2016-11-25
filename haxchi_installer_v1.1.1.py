@@ -17,12 +17,12 @@ except NameError:
 
 """ WELCOME """
 print("******************************")
-print("*   Haxchi Installer 1.1.1   *")
+print("*   Haxchi Installer 1.2     *")
 print("******************************\n")
 print("******************************")
-print("*    (FIX94  Haxchi v1.7)    *")
+print("*    (FIX94  Haxchi v1.8)    *")
 print("*                            *")
-print("*       17-nov-2016          *")
+print("*       25-nov-2016          *")
 print("*                            *")
 print("*   Script by Vickdu31       *")
 print("* email : vickdu31@yahoo.fr  *")
@@ -45,7 +45,7 @@ os.system('cls' if os.name == 'nt' else 'clear')
 
 """ ASK REGION """
 print("******************************")
-print("*    Haxchi Installer 1.1.1  *")
+print("*    Haxchi Installer 1.2    *")
 print("******************************\n")
 for retry in range(5):
     creg = input("What is your console region ? (eur/us/jap)  ").lower()
@@ -61,11 +61,15 @@ else:
 """ ASK WCHICH NDS GAME """
 for retry in range(5):
     print("\nWhat NDS (eShop) game do you want to hack ?")
-    print("1) Dr. Kawashima : Brain Age   2) Kirby Squeak Squad")
+    print("1) Dr. Kawashima : Brain Age   2) Kirby Squeak Squad(Mouse Attack)")
     print("3) WarioWare: Touched          4) Yoshi's Island DS ")
     print("5) Maroi Kart DS               6) New Super Mario Bros DS ")
     print("7) Star Fox Command            8) Zelda Phantom Hourglass")
-    print("9) Super Mario 64 DS           10) Yoshi Touch and Go \n")
+    print("9) Super Mario 64 DS           10) Yoshi Touch and Go")
+    print("11) Big Brain Academy          12) Mario and Luigi: Partners in Time")
+    print("13) DK Jungle Climber          14) Kirby Canvas Curse")
+    print("15) Zelda Spirit Tracks        16) Kirby Mass Attack")
+    print("17) Wario Master of Disguise \n")
     game_number = input("Enter a number :  ")
     try:
         if int(game_number)-1 in range(10):
@@ -92,7 +96,14 @@ game_dict = {1  : ["10179C00", "10179B00", "10179A00", "Dr. Kawashima : Brain Ag
              7  : ["101AC200", "101AC100", "101AC000", "Star Fox Command", "sfcommand.zip"],
              8  : ["101C3800", "101C3700", "101C3600", "Zelda Phantom Hourglass", "zeldaph.zip"],
              9  : ["101C3500", "101C3400", "101C3300", "Super Mario 64 DS", "sm64ds.zip"],
-             10 : ["10179F00", "10179E00", "10179D00", "Yoshi Touch and Go", "yoshitouchandgo.zip"]}
+             10 : ["10179F00", "10179E00", "10179D00", "Yoshi Touch and Go", "yoshitouchandgo.zip"]
+             11 : ["10198D00", "10198C00", "10198B00", "Big Brain Academy", "bigbrainacademy.zip"]
+             12 : ["10179F00", "10179E00", "10179D00", "Mario and Luigi: Partners in Time", "Mario and .zip"]
+             13 : ["10179F00", "10179E00", "10179D00", "Yoshi Touch and Go", "yoshitouchandgo.zip"]
+             14 : ["10179F00", "10179E00", "10179D00", "Yoshi Touch and Go", "yoshitouchandgo.zip"]
+             15 : ["10179F00", "10179E00", "10179D00", "Yoshi Touch and Go", "yoshitouchandgo.zip"]
+             16 : ["10179F00", "10179E00", "10179D00", "Yoshi Touch and Go", "yoshitouchandgo.zip"]
+             17 : ["10179F00", "10179E00", "10179D00", "Yoshi Touch and Go", "yoshitouchandgo.zip"]}
 if game_number == "6":
     game_name = game_dict[6][3]
     if creg == "eur":
