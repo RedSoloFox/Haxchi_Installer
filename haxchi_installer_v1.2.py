@@ -96,13 +96,13 @@ game_dict = {1  : ["10179C00", "10179B00", "10179A00", "Dr. Kawashima : Brain Ag
              7  : ["101AC200", "101AC100", "101AC000", "Star Fox Command", "sfcommand.zip"],
              8  : ["101C3800", "101C3700", "101C3600", "Zelda Phantom Hourglass", "zeldaph.zip"],
              9  : ["101C3500", "101C3400", "101C3300", "Super Mario 64 DS", "sm64ds.zip"],
-             10 : ["10179F00", "10179E00", "10179D00", "Yoshi Touch and Go", "yoshitouchandgo.zip"]
-             11 : ["10198D00", "10198C00", "10198B00", "Big Brain Academy", "bigbrainacademy.zip"]
-             12 : ["101A2300", "101A2200", "101A2100", "Mario and Luigi: Partners in Time", "partnersintime.zip"]
-             13 : ["101A5400", "101A5300", "101A5200", "DK Jungle Climber", "dkjclimber.zip"]
-             14 : ["101B8A00", "101B8900", "101B8800", "Kirby Canvas Curse", "kirbycanvascurse.zip"]
-             15 : ["101B8D00", "101B8C00", "101B8B00", "Zelda Spirit Tracks", "zeldast.zip"]
-             16 : ["101C8800", "101C8700", "101C8600", "Kirby Mass Attack", "kirbymassattack.zip"]
+             10 : ["10179F00", "10179E00", "10179D00", "Yoshi Touch and Go", "yoshitouchandgo.zip"],
+             11 : ["10198D00", "10198C00", "10198B00", "Big Brain Academy", "bigbrainacademy.zip"],
+             12 : ["101A2300", "101A2200", "101A2100", "Mario and Luigi: Partners in Time", "partnersintime.zip"],
+             13 : ["101A5400", "101A5300", "101A5200", "DK Jungle Climber", "dkjclimber.zip"],
+             14 : ["101B8A00", "101B8900", "101B8800", "Kirby Canvas Curse", "kirbycanvascurse.zip"],
+             15 : ["101B8D00", "101B8C00", "101B8B00", "Zelda Spirit Tracks", "zeldast.zip"],
+             16 : ["101C8800", "101C8700", "101C8600", "Kirby Mass Attack", "kirbymassattack.zip"],
              17 : ["101ABF00", "101ABE00", "101ABD00", "Wario Master of Disguise", "masterofdisguise.zip"]}
 if game_number == "6":
     game_name = game_dict[6][3]
