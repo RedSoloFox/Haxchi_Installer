@@ -72,13 +72,13 @@ for retry in range(5):
     print("17) Wario Master of Disguise \n")
     game_number = input("Enter a number :  ")
     try:
-        if int(game_number)-1 in range(10):
+        if int(game_number)-1 in range(17):
             ansr = input("Your NDS eShop game is the game number " + game_number + ". Is that correct ? (y/n)  ")
             if ansr.lower() in ['y', 'yes']:
                 break
-        print("\nPlease enter number from 1 to 10.\n")
+        print("\nPlease enter number from 1 to 17.\n")
     except ValueError:
-        print("\nPlease enter number from 1 to 10.\n")
+        print("\nPlease enter number from 1 to 17.\n")
 
 else:
     sys.exit(1)
@@ -98,12 +98,12 @@ game_dict = {1  : ["10179C00", "10179B00", "10179A00", "Dr. Kawashima : Brain Ag
              9  : ["101C3500", "101C3400", "101C3300", "Super Mario 64 DS", "sm64ds.zip"],
              10 : ["10179F00", "10179E00", "10179D00", "Yoshi Touch and Go", "yoshitouchandgo.zip"]
              11 : ["10198D00", "10198C00", "10198B00", "Big Brain Academy", "bigbrainacademy.zip"]
-             12 : ["10179F00", "10179E00", "10179D00", "Mario and Luigi: Partners in Time", "Mario and .zip"]
-             13 : ["10179F00", "10179E00", "10179D00", "Yoshi Touch and Go", "yoshitouchandgo.zip"]
-             14 : ["10179F00", "10179E00", "10179D00", "Yoshi Touch and Go", "yoshitouchandgo.zip"]
-             15 : ["10179F00", "10179E00", "10179D00", "Yoshi Touch and Go", "yoshitouchandgo.zip"]
-             16 : ["10179F00", "10179E00", "10179D00", "Yoshi Touch and Go", "yoshitouchandgo.zip"]
-             17 : ["10179F00", "10179E00", "10179D00", "Yoshi Touch and Go", "yoshitouchandgo.zip"]}
+             12 : ["101A2300", "101A2200", "101A2100", "Mario and Luigi: Partners in Time", "partnersintime.zip"]
+             13 : ["101A5400", "101A5300", "101A5200", "DK Jungle Climber", "dkjclimber.zip"]
+             14 : ["101B8A00", "101B8900", "101B8800", "Kirby Canvas Curse", "kirbycanvascurse.zip"]
+             15 : ["101B8D00", "101B8C00", "101B8B00", "Zelda Spirit Tracks", "zeldast.zip"]
+             16 : ["101C8800", "101C8700", "101C8600", "Kirby Mass Attack", "kirbymassattack.zip"]
+             17 : ["101ABF00", "101ABE00", "101ABD00", "Wario Master of Disguise", "masterofdisguise.zip"]}
 if game_number == "6":
     game_name = game_dict[6][3]
     if creg == "eur":
@@ -133,7 +133,7 @@ input("Please check that you now have a rom.zip file and please press enter to c
 """ ASK GAME LOCATION """
 os.system('cls' if os.name == 'nt' else 'clear') 
 print("******************************")
-print("*    Haxchi Installer 1.1.1  *")
+print("*    Haxchi Installer 1.2    *")
 print("******************************\n")
 for retry in range(15):
     gloc = input("Where is your game located ?\n  1) USB   2) NAND/REDNAND/INTERNAL MEMORY  ")
@@ -376,10 +376,10 @@ print("\n* Success ! *\n")
 
 """ GOODBYE """  
 print("******************************")
-print("*    Haxchi Installer 1.1.1  *")
+print("*    Haxchi Installer 1.2    *")
 print("******************************\n")
 print("******************************")
-print("*  You now have Haxchi v1.7  *")
+print("*  You now have Haxchi v1.8  *")
 print("*       On your Wii U        *")
 print("******************************\n")
 print("******************************")
@@ -395,7 +395,7 @@ os.system('cls' if os.name == 'nt' else 'clear')
 
 """ CREDITS """ 
 print("******************************")
-print("*    Haxchi Installer 1.1.1  *")
+print("*    Haxchi Installer 1.2    *")
 print("******************************\n")
 print("* Your game is now replaced by Haxchi ! *\n")
 print("**************************************")
@@ -406,8 +406,7 @@ print("*   @smealum for original Haxchi     *")
 print("*   @smealum for iosuhax/wupserver   *")
 print("*   @FIX94   for forked Haxchi       *")
 print("*  @FIX94 helping me with the script *")
-print("*       @FIX94 IS THE BEST <3        *")
-print("  Everyone contribuing to WII U HACK *")
+print("* @RedSoloFox for improving the script *")
 print("**************************************")
 input("Press enter to exit program...")
 sys.exit()
